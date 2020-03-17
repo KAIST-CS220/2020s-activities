@@ -1,0 +1,8 @@
+[Bb]in/
+[Oo]bj/
+*.swp
+.vs/
+*.suo
+*.user
+*.sln.docstates
+.leu
