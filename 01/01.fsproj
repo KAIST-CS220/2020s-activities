@@ -6,11 +6,13 @@
 
     <IsPackable>false</IsPackable>
     <GenerateProgramFile>false</GenerateProgramFile>
+    <DefineConstants>TEST</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Include="Lib.fs" />
     <Compile Include="MyFunc.fs" />
+    <Compile Include="Defs.fs" />
     <Compile Include="Tests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
