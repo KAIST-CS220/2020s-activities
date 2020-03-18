@@ -1,5 +1,8 @@
 [Bb]in/
 [Oo]bj/
+/.ionide
+*/.ionide
+*.code-workspace
 *.dll
 *.swp
 .vs/
