@@ -7,6 +7,10 @@
     <IsPackable>false</IsPackable>
     <GenerateProgramFile>false</GenerateProgramFile>
     <DefineConstants>TEST</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <WarningLevel>5</WarningLevel>
+    <OtherFlags>--warnon:1182</OtherFlags>
   </PropertyGroup>
 
   <ItemGroup>
