@@ -12,10 +12,6 @@ let similar result expectation =
   let low = expectation - threshold
   result < high && result > low
 
-let fromList lst =
-  List.foldBack (fun elt stream ->
-    Cons (elt, fun () -> stream)) lst Nil
-
 let rec toList = function
   | Nil -> []
   | Cons (elt, thunk) ->
