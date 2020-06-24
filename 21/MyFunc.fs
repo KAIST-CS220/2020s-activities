@@ -80,9 +80,13 @@ let digit = // Parser<char>
   char '0' <|> char '1' <|> char '2' <|> char '3' <|> char '4' <|> char '5' <|>
   char '6' <|> char '7' <|> char '8' <|> char '9'
 
+let toString chars =
+  chars
+  |> List.fold (fun str x -> str + x.ToString()) ""
+
 let number = // Parser<Expr>
   many1 digit
-  |>> (List.toArray >> System.String >> int >> Number)
+  |>> (toString >> int >> Number)
 
 let mutable exprRef = { Parse = fun _ -> failwith "XXX" }
 
